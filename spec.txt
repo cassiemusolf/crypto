@@ -1,0 +1,6 @@
+1. return 1 letter    input: a output: a
+2. return 2 letters   input: to output: to
+3. return 3 letters   input: not output: nto
+4. return 4 letters   input: lamb output: lmab
+5. return 5 letters   input: split output: siptl
+6. 6 letters (add a space after 5 letters) 
