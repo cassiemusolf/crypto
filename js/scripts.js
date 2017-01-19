@@ -1,5 +1,14 @@
 var translate = function(sentence) {
-  return sentence;
+  var newSentence = (sentence.replace(/ /g, "")).split("");
+  console.log(newSentence);
+
+  if (newSentence.length === 1) {
+    return newSentence;
+  } else if (newSentence.length > 1 && newSentence.length <= 4) {
+    newSentence = newSentence[0] + newSentence[2] + newSentence[1] + newSentence[3];
+  }
+
+  return newSentence;
 }
 
 
