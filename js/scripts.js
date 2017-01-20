@@ -12,9 +12,12 @@ var translate = function(sentence) {
       }
     }
 
+  var arrayToSentence = emptyArray.join("");
+  var seperatedSentence = arrayToSentence.match(/.{1,5}/g);
+  var finalSentence = seperatedSentence.join(" ");
 
   console.log(lengthSquareRoot);
-  return emptyArray;
+  return finalSentence;
 }
 
 
