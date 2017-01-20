@@ -2,13 +2,19 @@ var translate = function(sentence) {
   var newSentence = (sentence.replace(/ /g, "")).split("");
   console.log(newSentence);
 
-  if (newSentence.length === 1) {
-    return newSentence;
-  } else if (newSentence.length > 1 && newSentence.length <= 4) {
-    newSentence = newSentence[0] + newSentence[2] + newSentence[1] + newSentence[3];
-  }
+  var newSentenceLength = newSentence.length;
+  var lengthSquareRoot = Math.ceil(Math.sqrt(newSentenceLength));
 
-  return newSentence;
+  var emptyArray = [];
+    for (var i = 0; i < lengthSquareRoot; i +=1) {
+      for (var index = i; index < newSentenceLength; index+=lengthSquareRoot) {
+        emptyArray.push(newSentence[index]);
+      }
+    }
+
+
+  console.log(lengthSquareRoot);
+  return emptyArray;
 }
 
 
